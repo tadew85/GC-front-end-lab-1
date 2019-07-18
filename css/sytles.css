@@ -2,13 +2,12 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: #f9fafc;
 }
-
-nav {
-  display: flex;
-  flex-direction: column;
+ul {
+  padding: 0px;
+  list-style: none;
 }
 a {
-  padding: 3px;
+  padding: 0px;
   font-size: 12px;
   text-decoration: none;
   color: #69696a;
@@ -35,4 +34,115 @@ p {
   border: none;
   background-color: #000;
   color: #fff;
+}
+.button2 {
+  font-size: 12px;
+  padding: 8px;
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media only screen and (min-width: 768px) {
+  body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f9fafc;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+  }
+  a {
+    padding: 5px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #69696a;
+  }
+  .top {
+    color: #000;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  p {
+    margin-left: 5px;
+    padding-left: 5px;
+    border-left-style: solid;
+    color: #69696a;
+    font-size: 12px;
+    width: 50%;
+  }
+  .button {
+    font-size: 12px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+  }
+  #circle1 {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 70px;
+    top: 200px;
+    background-color: rgba(247, 136, 167, 0.6);
+  }
+  #circle2 {
+    border-radius: 100%;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    right: 10px;
+    top: 300px;
+    background-color: rgba(247, 193, 162, 0.7);
+    z-index: 1;
+  }
+  #circle3 {
+    border-radius: 100%;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    right: 10px;
+    top: 225px;
+    background-color: rgba(207, 130, 213, 0.6);
+  }
+  main {
+    position: absolute;
+    top: 25%;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  .button2 {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    font-size: 12px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+  }
 }
